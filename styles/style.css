@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-text-color: #3A3A3A;
+    --secondary-text-color: #787885;
+
+    --Text-Gray: #18191F;
+    --Dark-Color: rgba(0, 0, 0, 0.87);
+
+    --shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+
+    --primary-pink: #E02C6D;
+    --white-text: #FFF;
+
+    --primary-bold: 700;
+    --secondary--bold: 600;
+
+    --card-title-text: 1.8rem;
+    --card-price-text: 1.5rem;
+    --card-des-text: 0.8rem;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* -------------------------------- header css style ------------------------------------- */
+
+header {
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px 120px;
+
+}
+
+/* --------------------- nav section -------------------- */
+.nav-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.nav-container h3 {
+
+    font-size: var(--card-price-text);
+    font-weight: var(--primary-bold);
+
+    font-size: 1.2rem;
+
+}
+
+
+.nav-container ul {
+
+    display: flex;
+    gap: 30px;
+    font-weight: var(--primary-bold);
+
+
+}
+
+.nav-container ul li {
+    list-style: none;
+}
+
+.nav-container li a {
+    text-decoration: none;
+}
+
+
+/* ------------------ banner section ---------------------- */
+
+
+.banner-section {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+    gap: 130px;
+}
+
+
+.banner-container {
+    max-width: 582px;
+
+}
+
+.banner-title {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.primary-des {
+    max-width: 501px;
+    font-weight: var(--secondary--bold);
+    margin-bottom: 1rem;
+}
+
+
+.camera-container {
+    background-image: url('../resource/images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+}
+
+.camera-container img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+
+    /* object fit style on img */
+
+    /* width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 0 auto;
+    object-fit: cover; */
+}
+
+.banner-btn {
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #FFF;
+    font-weight: var(--secondary--bold);
+    border: none;
+}
+
+
+
+/* -------------------------------------- Main css style --------------------------------- */
+
+main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px 120px;
+}
+
+.popular-section {
+    padding: 100px 76px;
+}
+
+.logo-section {
+    padding: 40px 60px;
+    border-top: 1 solid rgba(192, 204, 218, 0.60);
+    border-bottom: 1 solid rgba(192, 204, 218, 0.60);
+    ;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* ---------- Popular Collection Section Started --------------- */
+
+.popular-title{
+    font-size: 1.8rem;
+    font-weight: var(--secondary--bold);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    row-gap: 30px;
+    column-gap: 20px;
+
+
+}
+
+.card {
+    padding: 17px 15px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.card h1{
+    font-size: var(--card-title-text);
+    font-weight: var(--secondary--bold);
+    margin-bottom: 6px;
+}
+
+.card h2{
+    font-size: var(--card-price-text);
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.card p{
+    font-size: var(--card-des-text);
+    font-weight: var(--secondary--bold);
+    margin-top: 6px;
+}
+
+
+/* ----------- Feature css style ------------ */
+
+
+.feature-section{
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    margin: 100px 30px;
+
+}
+
+
+.feature-title{
+    font-size: 2.2rem;
+    font-weight: var(--primary-bold);
+    margin-bottom: 1rem;
+}
+
+.feature-btn{
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #FFF;
+    font-weight: var(--secondary--bold);
+    border: none;
+}
+
+/* ------------------------------------ Main css style ended ------------------------------ */
+
+
+/* ---------------------------------- footer css style ended ------------------------------ */
+
+
+footer{
+    background-color: #0A0826;
+}
+
+.footer-section{
+   
+    max-height: 240px;
+    color: var(--white-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+
+}
+
+.footer-container{
+    text-align: center;
+}
+
+.footer-container h3{
+    font-size: var(--card-price-text);
+}
+
+.footer-container p{
+    margin: 6px 0;
+    font-weight: var(--primary-bold);
+}
+
+
+.icon-container img{
+    width: 2rem;
+    padding: 3px;
+    margin-right: 1rem;
+    margin-top: 1.1rem;
+
+}
+
+
+/* ======================================================================================== */
+
+/* ===================================== Responsive Css =================================== */
+
+
+@media screen and (max-width: 576px){
+
+
+    header {
+
+        padding: 5px 12px;
+    
+    }
+    
+    .nav-container,  .nav-container ul{
+
+        flex-direction: column;
+    
+    }
+
+    .nav-container{
+        justify-content: center;
+        align-items: start;
+        
+    }
+
+
+    .nav-container ul{
+        gap: 3px;
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+
+    .nav-container li img{
+        width: 1rem;
+    }
+
+
+    .banner-section {
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-section {
+
+        margin: 5px 0;
+        gap: 13px;
+    }
+    
+    .banner-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .primary-des {
+        max-width: 501px;
+        font-weight: var(--secondary--bold);
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+
+    .camera-container {
+        margin: 5px;
+    }
+
+    /* ---------------------------------------------------------------------------------- */
+
+
+    main {
+        padding: 5px 12px;
+    }
+
+
+    .popular-section {
+        padding: 10px 7px;
+    }
+    
+
+
+
+    .logo-section{
+        text-align: center;
+    }
+
+
+    .logo-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 10px;
+        justify-items: center;
+
+
+    }
+
+    .logo-container img{
+        width: 60px;
+    }
+
+    .logo-section {
+        padding: 4px 6px;
+    }
+
+    .popular-title{
+        font-size: 1.4rem;
+        margin-top: 3rem;
+    }
+
+    .card-container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+        row-gap: 6px;    
+    
+    }
+
+    .card img{
+        width: 100%;
+    }
+
+    .card h1{
+        font-size: 1.2rem;
+    }
+
+    .card h2{
+        font-size: 1rem;
+    }
+
+    .card p{
+        font-size: 0.7rem;
+    }
+
+    .feature-section{
+        flex-direction: column-reverse;
+        gap: 0rem;
+        align-items: center;
+        margin: 10px 3px;
+    
+    }
+
+    .feature-container{
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .feature-title{
+        font-size: 1.5rem;
+    }
+    
+    .primary-des{
+        font-size: 0.7rem;
+    }
+
+
+
+}
